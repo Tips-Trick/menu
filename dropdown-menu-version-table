@@ -1,0 +1,49 @@
+<html>
+	<style>
+			#menu{
+			  background: lightpink;
+			}
+			#menu td {
+			  padding: 0 15px;
+			}
+			#menu .sub-menu ul {
+			  background: lightpink;
+			  border: 3px solid lightpink;
+			  padding:10px;
+			  margin-top: 0;
+			  display: none;
+			  position: fixed;
+			  list-style-type: none;
+			}
+			#menu .sub-menu:hover ul{
+			  display: block;
+			}
+	</style>
+	
+	<div id="menu">
+	  <table>
+		<tr>
+		  <td>
+			<div class="sub-menu">
+			  News
+			  <ul>
+				<li>CMCN 4.0</li>
+				<li>Ftrick</li>
+				<li>Support</li>
+			  </ul>
+			</div>
+		  </td>
+		  <td>
+			<div class="sub-menu">
+			  Reference
+			  <ul>
+				<li>Linux</li>
+				<li>Facebook</li>
+				<li>Twitter</li>
+			  </ul>
+			</div>
+		  </td>
+		</tr>
+	  </table>
+	</div>
+</html>
