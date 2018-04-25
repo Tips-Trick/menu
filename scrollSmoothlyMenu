@@ -1,0 +1,22 @@
+	<script src="assets/js/jquery-1.12.3.min.js"></script>
+	<script src="assets/js/jquery.easing.1.3.js"></script>
+  
+  
+  $( function() {
+/* CHUYỂN ĐỘNG BODY */
+	$('.menutren ul li:nth-child(1) a').on('click', function(event){
+		event.preventDefault();
+
+		$('body').animate(
+			{ scrollTop: $('.chapter1').offset().top }, 1000, "easeOutExpo" );
+		/* Hàm tính select cách top khoảng cách là $(select).offset.top , timing function = 1s */
+	});
+});
+/* HỆ QUẢ :))
+$('.backtop-btn').on('click', function(event){
+		event.preventDefault();
+
+		$('body').animate(
+			{ scrollTop: 0, 1000 } );
+	});
+*/
