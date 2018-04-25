@@ -1,3 +1,5 @@
+<script src="assets/js/jquery-1.12.3.min.js"></script>
+
 <div class="point">
 		<h1 class="point__title">
 			Tieu de khoi
