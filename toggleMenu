@@ -1,0 +1,50 @@
+<div class="point">
+		<h1 class="point__title">
+			Tieu de khoi
+			<img src="assets/images/drop.png" alt="" width="30px" height="30px" class="toggle-arrow">
+		</h1>
+		<div class="point__description">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum eligendi labore nostrum nesciunt laborum, ipsam recusandae veritatis hic harum dolor, consequuntur culpa tempora illo totam qui vero quas quaerat velit.
+			<a href="">
+				<img src="assets/images/drop.png" alt="" />
+			</a>
+		</div>
+	</div>
+	
+/********************************************************************/	
+	
+	$('.point__title').on('click', function(event){
+		$(this).toggleClass('xanh');
+		$(this).next().slideToggle(800);
+	});
+
+/********************************************************************/
+
+
+
+.xanh {
+	color: blue;
+}
+.point {
+	width: 40%;
+    margin: auto;
+    overflow: hidden;
+    cursor: pointer;
+}
+.point .toggle-arrow {
+	float: right;
+  margin-right: -35px;
+  transition:.2s;
+}
+
+.point__title:hover .toggle-arrow {
+  margin-right: 0;
+}
+
+.point .pic_demo {
+	float: left;
+	width: 170px;
+}
+.point__title.xanh img {
+	transform: rotate(180deg);
+}
