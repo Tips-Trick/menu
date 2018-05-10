@@ -1,0 +1,285 @@
+<div id="top">
+    <nav id="topmenu" class="container">
+        <ul>
+            <li><a href="#">Trang chủ<i class="fas fa-angle-down"></i><span class="arrow">More Link</span></a>
+                <ul class="sublist">
+                <li><a href="##">Sub link</a></li>
+                <li><a href="##">Sub link</a></li>
+                <li><a href="##">Sub link<span class="arrow-right">More Link</span></a>
+                    <ul class="subsublist">
+                    <li><a href="##">Sub Sub link</a></li>
+                    <li><a href="##">Sub Sub link</a></li>
+                    <li><a href="##">Sub Sub link</a></li>
+                    </ul>
+                    </li>
+                </ul>
+                </li>
+            <li><a href="#">Về chúng tôi<i class="fas fa-angle-down"></i><span class="arrow">More Link</span></a>
+                <ul class="sublist">
+                <li><a href="##">Sub link</a></li>
+                <li><a href="##">Sub link</a></li>
+                <li><a href="##">Sub link<span class="arrow-right">More Link</span></a>
+                    <ul class="subsublist">
+                    <li><a href="##">Sub Sub link</a></li>
+                    <li><a href="##">Sub Sub link</a></li>
+                    <li><a href="##">Sub Sub link</a></li>
+                    </ul>
+                    </li>
+                </ul>
+                </li>
+            <li><a href="#">Dịch vụ phòng khám<i class="fas fa-angle-down"></i> <span class="arrow">More Link</span></a>
+                <ul class="sublist">
+                    <li><a href="#">Sub Link<span class="arrow-right">More Link</span></a>
+                        <ul class="subsublist">
+                            <li><a href="#">Sub Sub Link</a></li>
+                            <li><a href="#">Sub Sub Link</a></li>
+                            <li><a href="#">Sub Sub Link</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Sub Link<span class="arrow-right">More Link</span></a>
+                        <ul class="subsublist">
+                            <li><a href="#">Sub Sub Link</a></li>
+                            <li><a href="#">Sub Sub Link</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Sub Link</a></li>
+                    <li><a href="#">Sub Link</a></li>
+                    <li><a href="#">Sub Link<span class="arrow-right">More Link</span></a>
+                        <ul class="subsublist">
+                            <li><a href="#">Sub Sub Link</a></li>
+                            <li><a href="#">Sub Sub Link</a></li>
+                            <li><a href="#">Sub Sub Link</a></li>
+                            <li><a href="#">Sub Sub Link</a></li>
+                            <li><a href="#">Sub Sub Link</a></li>
+                        </ul>
+                        </li>
+                </ul>
+            </li>
+            <li><a href="#">Tin Tức/Blog<i class="fas fa-angle-down"></i><span class="arrow">More Link</span></a>
+                <ul class="sublist">
+                <li><a href="##">Sub link</a></li>
+                <li><a href="##">Sub link</a></li>
+                <li><a href="##">Sub link<span class="arrow-right">More Link</span></a>
+                    <ul class="subsublist">
+                    <li><a href="##">Sub Sub link</a></li>
+                    <li><a href="##">Sub Sub link</a></li>
+                    <li><a href="##">Sub Sub link</a></li>
+                    </ul>
+                    </li>
+                </ul>
+                </li>
+            <li><a href="#">Liên hệ<i class="fas fa-angle-down"></i><span class="arrow">More Link</span></a>
+                <ul class="sublist">
+                <li><a href="##">Sub link</a></li>
+                <li><a href="##">Sub link</a></li>
+                <li><a href="##">Sub link<span class="arrow-right">More Link</span></a>
+                    <ul class="subsublist">
+                    <li><a href="##">Sub Sub link</a></li>
+                    <li><a href="##">Sub Sub link</a></li>
+                    <li><a href="##">Sub Sub link</a></li>
+                    </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><button class="btn main-menu__booking-btn">Đặt lịch khám bệnh</button></li>
+        </ul>
+    </nav>
+</div>
+<div class="clearfix"></div>
+
+
+
+
+
+
+
+  #top {
+    background: #fff;
+    float:left;
+    height:56px;
+    line-height:30px;
+    width:100%;
+    border-top: 1px solid #ccc;
+}
+  nav#topmenu {
+    margin:0 auto;
+    padding:0 15px;
+    position:relative;
+}
+  nav#topmenu ul {
+    margin:0;
+    padding:0;
+}
+  nav#topmenu ul li {
+    float: left;
+    position: relative;
+    font-size: 10px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 12%;
+    text-align: center;
+    text-transform: capitalize;
+    border-right: 0px solid #ccc;
+    z-index: 5;
+}
+  nav#topmenu ul li:first-child {
+    border-left:1px solid #ccc;
+}
+  nav#topmenu ul li a {
+    color:rgba(255,255,255,0.6);
+    text-decoration:none;
+    display:block;
+    color: #686868;
+    text-align: center;
+    padding: 11px 21px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    border: 1px solid #ebebeb;
+    /* border-top: 3px solid #ebebeb; */
+    transition: .3s;
+}
+  nav#topmenu ul li a:hover {
+    /* color:#fff; */
+    border-top: 3px solid #0b65c2;
+}
+  nav#topmenu ul li:hover > a {
+    /* color: #fff; */
+}
+  nav#topmenu ul li span {
+    background:url(arrow.png) center no-repeat;
+    height:10px;
+    position:absolute;
+    text-indent:-9999px;
+    top:10px;
+    right:5px;
+    width:10px;
+}/*
+  nav#topmenu ul li span.arrow {
+    background-position:0 2px;
+}
+  nav#topmenu ul li span.arrow-right {
+    background-position:-10px 2px;
+}*/
+  nav#topmenu ul li ul.sublist {
+    float:left;
+    list-style:none;
+    margin:0;
+    padding:0;
+    position:absolute;
+    left:0px;
+    top:60px;
+    background:#fff;
+    width: 180px;
+    opacity:0;
+    visibility:hidden;
+    -moz-transition:opacity 0.2s 0.1s ease-out, visibility 0.1s 0.1s linear;
+    -webkit-transition:opacity 0.3s ease-out, visibility 0.1s 0.1s linear;
+    -o-transition:opacity 0.3s ease-out, visibility 0.1s 0.1s linear;
+    transition:opacity 0.3s ease-out, visibility 0.1s 0.1s linear;
+}
+  nav#topmenu ul li ul.sublist li {
+    border:none;
+    border-bottom:1px solid #ccc;
+    clear:both;
+    margin-top:-15px;
+    padding:0;
+    width: 180px;
+    -moz-transition:opacity 0.1s 0.15s ease-out, margin 0.3s 0.1s ease-out;
+    -webkit-transition:opacity 0.1s 0.15s ease-out, margin 0.3s 0.1s ease-out;
+    -o-transition:opacity 0.15s 0.15s ease-out, margin 0.3s 0.1s ease-out;
+    transition:opacity 0.15s 0.15s ease-out, margin 0.3s 0.1s ease-out;
+}
+
+  nav#topmenu ul li ul.sublist li a {
+    /*color:rgba(255,255,255,0);*/
+}
+  nav#topmenu ul li:hover ul.sublist {
+    opacity:1;
+    visibility:visible;
+}
+  nav#topmenu ul li:hover ul.sublist li {
+    margin-top:0;
+    opacity:1;
+}
+  nav#topmenu ul li:hover ul.sublist li a {
+    color:#686868;
+    -moz-transition:color 0.1s ease-out;
+    -webkit-transition:color 0.1s ease-out;
+    -o-transition:color 0.1s ease-out;
+    transition:color 0.1s ease-out;
+}
+  nav#topmenu ul li:hover ul.sublist li a:hover {
+    color:#686868;
+    -moz-transition:color 0.3s ease-out;
+    -webkit-transition:color 0.3s ease-out;
+    -o-transition:color 0.3s ease-out;
+    transition:color 0.3s ease-out;
+}
+  nav#topmenu ul li:hover ul.sublist li:hover > a {
+  /*  color:#fff;*/
+}
+/* SUB SUB LIST */
+  nav#topmenu ul li ul.sublist li ul.subsublist {
+    float:left;
+    list-style:none;
+    margin:0;
+    padding:0;
+    position:absolute;
+    left:130px;
+    top:0px;
+    background:#fff;
+    width:180px;
+    opacity:0;
+    visibility:hidden;
+    -moz-transition:opacity 0.2s 0.01s ease-in-out, left 0.2s 0.1s ease-out, visibility 0.1s 0.1s linear;
+    -webkit-transition:opacity 0.2s 0.01s ease-in-out, left 0.2s 0.1s ease-out, visibility 0.1s 0.1s linear;
+    -o-transition:opacity 0.2s 0.01s ease-in-out, left 0.2s 0.1s ease-out, visibility 0.1s 0.1s linear;
+    transition:opacity 0.2s 0.01s ease-in-out, left 0.2s 0.1s ease-out, visibility 0.1s 0.1s linear;
+}
+  nav#topmenu ul li ul.sublist li ul.subsublist li{
+    border:none;
+    border-bottom:1px solid #ccc;
+    clear:both;
+    margin:0;
+    padding:0;
+    width: 180px;
+    opacity:1;
+}
+  nav#topmenu ul li ul.sublist li:hover ul.subsublist {
+    opacity:1;
+    left:180px;
+    visibility:visible;
+}
+
+
+/********************edit tiếp menu*/
+nav#topmenu ul li:nth-child(2) {
+    width: 15%;
+}
+nav#topmenu ul li:nth-child(3) {
+    width: 20%;
+}
+nav#topmenu ul li:nth-child(4) {
+    width: 15%;
+}
+nav#topmenu ul li:nth-child(5) {
+    width: 12%;
+}
+nav#topmenu ul li:nth-child(6) {
+    width: 15%;
+}
+#topmenu i.fas.fa-angle-down {
+    margin-left: 5px;
+}
+.main-menu__booking-btn {
+    background: #f25252;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 15px;
+    padding: 15px 40px;
+    border: 2px solid #f25252;
+    border-radius: 0;
+}
