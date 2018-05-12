@@ -1,0 +1,109 @@
+
+<div id="menu-responsive" class="menu-responsive-overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <ul class="menu-responsive">
+            <li><a href="#">TRang chủ</a></li>
+            <li><a href="javascript:void(0)">Về chúng tôi<i class="fas fa-caret-down"></i></a>
+                <ul class="open-dropdown-menu__content">
+                    <li><a href="#">Chính sách</a></li>
+                    <li><a href="#">Dropdown<i class="fas fa-caret-down"></i></a>
+                        <ul  class="open-dropdown-menu__content">
+                            <li><a href="#">Dropdown__1</a></li>
+                            <li><a href="#">Dropdown__2</a></li>
+                            <li><a href="#">Dropdown__3</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#">Dịch vụ phòng khám</a></li>
+            <li><a href="#">Góc tri ân</a></li>
+        </ul>
+</div>
+
+
+
+
+/**menu-res*/
+
+.menu-responsive-overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-y: hidden;
+    transition: 0.5s;
+    z-index:  10;
+}
+
+.menu-responsive-overlay__content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.menu-responsive-overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.menu-responsive-overlay a:hover, .menu-responsive-overlay a:focus {
+    color: #f1f1f1;
+}
+
+.menu-responsive-overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+.open-dropdown-menu__content {
+    display: none;
+}
+
+.open-dropdown-menu>ul{
+    display: block;
+}
+/************************/
+
+
+
+
+function openNav() {
+    document.getElementById("menu-responsive").style.height = "100%";
+}
+
+function closeNav() {
+    document.getElementById("menu-responsive").style.height = "0%";
+}
+
+
+/***************************/
+
+
+jQuery(document).ready(function($) {
+
+$('.fa-caret-down').on('click', function(event) {
+event.preventDefault();
+event.stopPropagation();
+if ($(this).hasClass('fa-caret-down')) {
+$(this).removeClass('fa-caret-down');
+$(this).addClass('fa-caret-up');
+} else {
+$(this).removeClass('fa-caret-up');
+$(this).addClass('fa-caret-down');
+}
+$(this).closest('li').toggleClass('open-dropdown-menu');
+})
+
+});
